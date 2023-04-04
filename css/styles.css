@@ -416,6 +416,128 @@ main {
     ". boton-3 ."
     ;
     justify-items: center;
+    align-items: center;
+}
+
+@media (max-width:1024px) {
+    .articulo-nuevos img {
+        width: 25vw;
+        height: 33vh;
+        margin: 8%;
+    }
+    .articulo-nuevos {
+        width: 30vw;
+        height: 50vh;
+    } 
+    .grids-novedades-container {
+        grid-template-rows: 10vh 60vh 10vh 10vh 60vh 10vh 10vh 60vh 10vh;
+    }
+    .titulos-novedades {
+        font-size: 3vw;
+    }
+    .titulos {
+        font-size: 4vw;
+    }
+    .boton-ver-mas a {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width:768px) {
+    .articulo-nuevos img {
+        width: 25vw;
+        height: 27vh;
+    }
+    .articulo-nuevos {
+        width: 30vw;
+        height: 40vh;
+    } 
+    .grids-novedades-container {
+        grid-template-rows: 8vh 45vh 8vh 8vh 45vh 8vh 8vh 45vh 8vh;
+    }
+    .titulos {
+        font-size: 4.5vw;
+    }
+    .boton-ver-mas a {
+        font-size: 1.4vw;
+    }
+}
+
+@media (max-width:425px){
+    .articulo-nuevos img {
+        height: 15vh;
+    }
+    .articulo-nuevos {
+        height: 22vh;
+    } 
+    .grids-novedades-container {
+        grid-template-rows: 7vh 25vh 7vh 7vh 25vh 7vh 7vh 25vh 7vh;
+    }
+    .boton-ver-mas {
+        width: 12vw;
+        height: 3vh;
+    }
+    
+    .boton-ver-mas a {
+        font-size: 1.7vw;
+    }
+    .titulos-novedades {
+        font-size: 3.5vw;
+    }
+    .titulos {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width:375px){
+    .articulo-nuevos img {
+        height: 13vh;
+    }
+    .articulo-nuevos {
+        height: 19vh;
+    } 
+    .grids-novedades-container {
+        grid-template-rows: 7vh 22vh 7vh 7vh 22vh 7vh 7vh 22vh 7vh;
+    }
+    .boton-ver-mas {
+        width: 13vw;
+        height: 3vh;
+    }
+    
+    .boton-ver-mas a {
+        font-size: 1.9vw;
+    }
+    .titulos-novedades {
+        font-size: 4.5vw;
+    }
+    .titulos {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width:320px){
+    .articulo-nuevos img {
+        height: 11vh;
+    }
+    .articulo-nuevos {
+        height: 17vh;
+    } 
+    .grids-novedades-container {
+        grid-template-rows: 8vh 19vh 5vh 8vh 19vh 5vh 8vh 19vh 5vh;
+    }
+    .boton-ver-mas {
+        width: 14vw;
+    }
+    
+    .boton-ver-mas a {
+        font-size: 2vw;
+    }
+    .titulos-novedades {
+        font-size: 5vw;
+    }
+    .titulos {
+        font-size: 8vw;
+    }
 }
 
 .titulo-1 {
@@ -579,12 +701,10 @@ main {
 }
 
 /* CONTACTO **********************************/
-.contenedor-formulario form {
-    background-color: #19705B;
-    width: 40%;
-    height: 10vh;
+
+.contenedor-formulario {
     display: flex;
-    flex-direction: column;
+    background-color: #48d1b1;
 }
 
 /************************* FOOTER *************************/
